@@ -21,7 +21,7 @@ TagManager:
   User Layer 8: Vehicles
   User Layer 9: Characters
   User Layer 10: Floor
-  User Layer 11: 
+  User Layer 11: MiniMap
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
@@ -62,4 +62,8 @@ TagManager:
   - name: UI
     userID: 4
     uniqueID: 771169021
+    locked: 0
+  - name: MiniMap
+    userID: 5
+    uniqueID: 3214333845
     locked: 0

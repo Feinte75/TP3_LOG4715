@@ -74,6 +74,7 @@ public class CheckpointManager : MonoBehaviour
 
 	void Update() {
 
+		Debug.Log (getFirstCarOnRace ());
 		foreach (CarController car in _carContainer.GetComponentsInChildren<CarController>(true))
 		{
 			float counter;
