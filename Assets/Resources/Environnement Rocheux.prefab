@@ -2833,7 +2833,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -76, y: 35, z: 17}
+  m_LocalPosition: {x: -1108, y: 45, z: 479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 420764}
@@ -3218,7 +3218,7 @@ Transform:
   m_GameObject: {fileID: 159890}
   m_LocalRotation: {x: 6.48886167e-10, y: -.290167719, z: 2.01094985e-09, w: .956975877}
   m_LocalPosition: {x: -215.300003, y: 45, z: -21}
-  m_LocalScale: {x: 249.218689, y: 64.06633, z: 74.4889908}
+  m_LocalScale: {x: 224.187134, y: 64.06633, z: 74.4889908}
   m_Children: []
   m_Father: {fileID: 459888}
   m_RootOrder: 0
@@ -3312,8 +3312,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172076}
   m_LocalRotation: {x: 6.48886167e-10, y: -.290167719, z: 2.01094985e-09, w: .956975877}
-  m_LocalPosition: {x: -310, y: 45, z: 77}
-  m_LocalScale: {x: 78.2826233, y: 64.06633, z: 74.4889908}
+  m_LocalPosition: {x: -301.799988, y: 45, z: 86}
+  m_LocalScale: {x: 53.6716843, y: 64.06633, z: 74.4889908}
   m_Children: []
   m_Father: {fileID: 472074}
   m_RootOrder: 0
@@ -3324,8 +3324,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172078}
   m_LocalRotation: {x: -4.56912397e-10, y: -.240117684, z: 8.04118816e-09, w: .970743775}
-  m_LocalPosition: {x: 232, y: 45.7000008, z: -1217}
-  m_LocalScale: {x: 534.080261, y: 64.06633, z: 184.426895}
+  m_LocalPosition: {x: 174, y: 46, z: -1281}
+  m_LocalScale: {x: 298.159119, y: 64.06633, z: 184.426895}
   m_Children: []
   m_Father: {fileID: 472080}
   m_RootOrder: 0
@@ -7589,7 +7589,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172078}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -7975,8 +7975,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  destructible: 1
-  explode: 1
+  destructible: 0
+  explode: 0
   explosionForce: 2
 --- !u!114 &11448976
 MonoBehaviour:
@@ -7990,8 +7990,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  destructible: 1
-  explode: 1
+  destructible: 0
+  explode: 0
   explosionForce: 2
 --- !u!114 &11459894
 MonoBehaviour:
