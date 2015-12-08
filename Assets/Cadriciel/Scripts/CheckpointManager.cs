@@ -156,4 +156,10 @@ public class CheckpointManager : MonoBehaviour
 		return car.GetComponent<CarUserControlMP>() != null;
 	}
 
+	public int getTotalLap(){
+
+		return _totalLaps;
+
+	}
+
 }
