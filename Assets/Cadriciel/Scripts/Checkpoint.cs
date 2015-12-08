@@ -17,7 +17,9 @@ public class Checkpoint : MonoBehaviour
 			if (car)
 			{
 				_manager.CheckpointTriggered(car,_index);
+				Debug.Log (car+" Checkpoint : "+_index);
 			}
 		}
+
 	}
 }
