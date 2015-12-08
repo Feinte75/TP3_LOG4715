@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
@@ -213,6 +213,8 @@ public class CarController : MonoBehaviour
 	}
 
 	private float rotAng = 0.0f;
+	private bool inAir = false;
+	private float inAirTime = 0f;
 
 	public void Move (float steerInput, float accelBrakeInput, bool q, bool e)
     {
@@ -233,8 +235,18 @@ public class CarController : MonoBehaviour
 			}
 			
 			if (!anyOnGround && orientationAerienne) {
-				ControleAerien(steerInput, accelBrakeInput,rotAng);
+				if(!inAir) {
+					inAirTime = 0f;
+					inAir = true;
+				}
+				else {
+					inAirTime += Time.deltaTime;
+				}
+				if(inAirTime > 0.2f)
+					ControleAerien(steerInput, accelBrakeInput, rotAng);
 			}
+			else
+				inAir = false;
 		}
 
 
@@ -259,7 +271,7 @@ public class CarController : MonoBehaviour
 
 		float goodRot = rotAng/10;
 
-		newValues.eulerAngles = new Vector3 (2*vertical, goodRot, -2*horizontal);
+		newValues.eulerAngles = new Vector3 (vertical, goodRot, -2 * horizontal);
 
 		rigidbody.MoveRotation (currentOrientation * newValues);
 	}
