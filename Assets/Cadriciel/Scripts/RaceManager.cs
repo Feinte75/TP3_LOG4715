@@ -79,7 +79,7 @@ public class RaceManager : MonoBehaviour
 		}
 		while (count > 0);
 
-		Application.LoadLevel("boot");
+		Application.LoadLevel("end");
 	}
 
 	public void Announce(string announcement, float duration = 2.0f)
