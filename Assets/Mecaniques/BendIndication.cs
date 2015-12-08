@@ -18,11 +18,11 @@ public class BendIndication : MonoBehaviour
 			if (IsPlayer (collider.GetComponentInParent<CarController> ())) {
 				if (turnDirection == "Left") {
 					image.sprite = Resources.Load ("turn-left", typeof(Sprite)) as Sprite;
-					image.CrossFadeAlpha (1, 0.5f, false);
+					image.CrossFadeAlpha (1, 1f, false);
 						
 				} else if (turnDirection == "Right") {
 					image.sprite = Resources.Load ("turn-right", typeof(Sprite)) as Sprite;
-					image.CrossFadeAlpha (1, 0.5f, false);
+					image.CrossFadeAlpha (1, 1f, false);
 						
 				}
 				display = true;
