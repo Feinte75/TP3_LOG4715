@@ -242,6 +242,7 @@ public class CarController : MonoBehaviour
 				else {
 					inAirTime += Time.deltaTime;
 				}
+				// Delay before air control activation for playability
 				if(inAirTime > 0.2f)
 					ControleAerien(steerInput, accelBrakeInput, rotAng);
 			}
